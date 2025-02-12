@@ -231,7 +231,7 @@ function drawWalkableGrid(map, grid, LON_MIN, LAT_MIN, SCALE) {
 
 var startLat = 52.594351, startLon = 6.592490;
 var endLat = 52.591761, endLon = 6.598785;
-drawWalkableGrid(map, grid, LON_MIN, LAT_MIN, SCALE);
+//drawWalkableGrid(map, grid, LON_MIN, LAT_MIN, SCALE);
 
 findPathBetweenCoordinates(startLat, startLon, endLat, endLon);
 //console.log(grid);
