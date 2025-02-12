@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client-Side Routing met Pathfinding.js</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="pathfinding.min.js"></script>
+    <script src="https://unpkg.com/leaflet-curve"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="routes.js"></script> <!-- Importeren van het osm_data.js bestand -->
+</head>
+<body>
+    <div id="map"></div>
+    <div id="controls">
+        <div class="bar">
+            <input type="text" id="fromLoc" oninput="filterLocation()">
+            <button id="picker">P</button>
+            <button id="deviceLoc">L</button>
+        </div>
+        <div class="bar">
+            <input type="text" id="toLoc" oninput="filterLocation()">
+            <button id="picker">P</button>
+            <button id="deviceLoc">L</button>
+        </div>
+        <div class="bar vehicle">
+            <button id="car">car</button>
+            <button id="foot">foot</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <div id="info"></div>
+    <script src="routing.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+
+.leaflet-control-attribution.leaflet-control {
+    display: none;
+}
+
+#map {
+    margin-top: 15vh;
+    height: 80vh;
+}
+
+#controls {
+    height: 16vh;
+    position: absolute;
+    top: 0;  /* Plaats controls aan de bovenkant */
+    width: 100vw;
+    z-index:999;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 9px 15px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 9px 15px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 9px 15px 5px rgba(0,0,0,0.75);
+}
+
+#info {
+    height: 5vh;
+    position: absolute;
+    bottom: 0; /* Zet info aan de onderkant */
+    width: 100vw;
+    background-color: blue;
+}
+
+#fromLoc,#toLoc{
+    width:80vw;
+    height:4vh;
+    font-size: 1rem;
+    border-radius:5px;
+}
+
+.bar{
+    width:100vw;
+    height:5vh;
+    padding:5px;
+    justify-content: center;
+}
+
+.vehicle{
+    display:flex;
+    justify-content: center;
+    height:5vh;
+}
+
+#car,#foot{
+    height:3.5vh;
+    margin-top:-5px;
+    width:45vw;
+    margin-left:5px;
+}
